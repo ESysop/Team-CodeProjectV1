@@ -20,6 +20,7 @@ namespace Team_CodeProjectV1.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Customer> Customers { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -29,5 +30,7 @@ namespace Team_CodeProjectV1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Team_CodeProjectV1.Models.Restaurant> Restaurants { get; set; }
     }
 }

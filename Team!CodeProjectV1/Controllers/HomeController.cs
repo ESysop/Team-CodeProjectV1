@@ -26,5 +26,11 @@ namespace Team_CodeProjectV1.Controllers
 
 			return View();
 			}
-		}
+        public ActionResult Customer()
+        {
+            ViewBag.Message = "Your customer page.";
+
+            return View();
+        }
+    }
 	}
