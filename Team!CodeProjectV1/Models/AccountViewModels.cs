@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-
 namespace Team_CodeProjectV1.Models
 {
     public class ExternalLoginConfirmationViewModel
