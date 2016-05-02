@@ -32,5 +32,11 @@ namespace Team_CodeProjectV1.Controllers
 
             return View();
         }
+
+		public ActionResult Restaurant ()
+			{
+			ViewBag.Message = "Your Restaurant Page";
+			return View();
+			}
     }
 	}

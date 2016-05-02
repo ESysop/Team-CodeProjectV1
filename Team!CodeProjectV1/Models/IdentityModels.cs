@@ -34,5 +34,7 @@ namespace Team_CodeProjectV1.Models
         }
 
         public System.Data.Entity.DbSet<Team_CodeProjectV1.Models.Restaurant> Restaurants { get; set; }
-    }
+
+		public System.Data.Entity.DbSet<Team_CodeProjectV1.Models.FoodItem> FoodItems { get; set; }
+		}
 }

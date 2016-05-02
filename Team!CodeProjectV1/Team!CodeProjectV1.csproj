@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\FoodItemsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RestaurantsController.cs" />
@@ -211,11 +212,21 @@
     <Compile Include="Migrations\201604281941518_restaurant.Designer.cs">
       <DependentUpon>201604281941518_restaurant.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604282020229_Added FoodItem.cs" />
+    <Compile Include="Migrations\201604282020229_Added FoodItem.Designer.cs">
+      <DependentUpon>201604282020229_Added FoodItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604282108411_added order.cs" />
+    <Compile Include="Migrations\201604282108411_added order.Designer.cs">
+      <DependentUpon>201604282108411_added order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\FoodItem.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -291,7 +302,16 @@
     <Content Include="Views\Restaurants\Details.cshtml" />
     <Content Include="Views\Restaurants\Edit.cshtml" />
     <Content Include="Views\Restaurants\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Example.cshtml" />
+=======
+    <Content Include="Views\FoodItems\Create.cshtml" />
+    <Content Include="Views\FoodItems\Delete.cshtml" />
+    <Content Include="Views\FoodItems\Details.cshtml" />
+    <Content Include="Views\FoodItems\Edit.cshtml" />
+    <Content Include="Views\FoodItems\Index.cshtml" />
+    <Content Include="Views\Home\Restaurant.cshtml" />
+>>>>>>> 426d267e511d6d1474521b3e8e0f3e07224d90e8
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -310,6 +330,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604281941518_restaurant.resx">
       <DependentUpon>201604281941518_restaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604282020229_Added FoodItem.resx">
+      <DependentUpon>201604282020229_Added FoodItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604282108411_added order.resx">
+      <DependentUpon>201604282108411_added order.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
